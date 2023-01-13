@@ -9,6 +9,7 @@
     systems = [ "x86_64-linux" "aarch64-linux" ];
     perSystem = { pkgs, lib, buildGoModule, fetchFromGitHub, ... }: {
       packages = let buildGoModule = pkgs.buildGoModule; fetchFromGitHub = pkgs.fetchFromGitHub; in {
+        nomad_1_4_3 = ((import ./nomad_1_4.nix) { inherit lib buildGoModule fetchFromGitHub; }).nomad_1_4_3;
         nomad_1_4_2 = ((import ./nomad_1_4.nix) { inherit lib buildGoModule fetchFromGitHub; }).nomad_1_4_2;
         nomad_1_4_1 = ((import ./nomad_1_4.nix) { inherit lib buildGoModule fetchFromGitHub; }).nomad_1_4_1;
         nomad_1_4_0 = ((import ./nomad_1_4.nix) { inherit lib buildGoModule fetchFromGitHub; }).nomad_1_4_0;
