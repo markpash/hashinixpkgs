@@ -1,6 +1,12 @@
 { lib, buildGoModule, fetchFromGitHub }:
 
 {
+  consul_1_13_6 = (import ./consul.nix) {
+    inherit lib buildGoModule fetchFromGitHub;
+    version = "1.13.6";
+    sha256 = "sha256-jYWdrkcoHoBUHh+j85WDi2x4tmLxsMFsUD+fbYaRpIE=";
+    vendorSha256 = "sha256-KGQp35M4iVJtQw6qKAHTePK5fqjpQN3YvQkdbN0gF8M=";
+  };
   consul_1_13_5 = (import ./consul.nix) {
     inherit lib buildGoModule fetchFromGitHub;
     version = "1.13.5";
