@@ -38,6 +38,7 @@
         consul_1_13_1 = ((import ./consul_1_13.nix) { inherit lib buildGoModule fetchFromGitHub; }).consul_1_13_1;
         consul_1_13_0 = ((import ./consul_1_13.nix) { inherit lib buildGoModule fetchFromGitHub; }).consul_1_13_0;
 
+        consul_1_12_9 = ((import ./consul_1_12.nix) { inherit lib buildGoModule fetchFromGitHub; }).consul_1_12_9;
         consul_1_12_8 = ((import ./consul_1_12.nix) { inherit lib buildGoModule fetchFromGitHub; }).consul_1_12_8;
         consul_1_12_7 = ((import ./consul_1_12.nix) { inherit lib buildGoModule fetchFromGitHub; }).consul_1_12_7;
         consul_1_12_6 = ((import ./consul_1_12.nix) { inherit lib buildGoModule fetchFromGitHub; }).consul_1_12_6;
