@@ -14,6 +14,7 @@
         nomad_1_4_1 = ((import ./nomad_1_4.nix) { inherit lib buildGoModule fetchFromGitHub; }).nomad_1_4_1;
         nomad_1_4_0 = ((import ./nomad_1_4.nix) { inherit lib buildGoModule fetchFromGitHub; }).nomad_1_4_0;
 
+        nomad_1_3_9 = ((import ./nomad_1_3.nix) { inherit lib buildGoModule fetchFromGitHub; }).nomad_1_3_9;
         nomad_1_3_8 = ((import ./nomad_1_3.nix) { inherit lib buildGoModule fetchFromGitHub; }).nomad_1_3_8;
         nomad_1_3_7 = ((import ./nomad_1_3.nix) { inherit lib buildGoModule fetchFromGitHub; }).nomad_1_3_7;
         nomad_1_3_6 = ((import ./nomad_1_3.nix) { inherit lib buildGoModule fetchFromGitHub; }).nomad_1_3_6;
