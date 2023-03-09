@@ -30,6 +30,7 @@
         nomad_1_3_1 = ((import ./nomad_1_3.nix) { inherit lib buildGoModule fetchFromGitHub; }).nomad_1_3_1;
         nomad_1_3_0 = ((import ./nomad_1_3.nix) { inherit lib buildGoModule fetchFromGitHub; }).nomad_1_3_0;
 
+        consul_1_15_1 = ((import ./consul_1_15.nix) { inherit lib buildGoModule fetchFromGitHub; }).consul_1_15_1;
         consul_1_15_0 = ((import ./consul_1_15.nix) { inherit lib buildGoModule fetchFromGitHub; }).consul_1_15_0;
 
         consul_1_14_4 = ((import ./consul_1_14.nix) { inherit lib buildGoModule fetchFromGitHub; }).consul_1_14_4;
