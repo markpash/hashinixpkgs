@@ -11,6 +11,7 @@
       packages = let buildGoModule = pkgs.buildGoModule; fetchFromGitHub = pkgs.fetchFromGitHub; in {
         nomad_1_5_0 = ((import ./nomad_1_5.nix) { inherit lib buildGoModule fetchFromGitHub; }).nomad_1_5_0;
 
+        nomad_1_4_6 = ((import ./nomad_1_4.nix) { inherit lib buildGoModule fetchFromGitHub; }).nomad_1_4_6;
         nomad_1_4_5 = ((import ./nomad_1_4.nix) { inherit lib buildGoModule fetchFromGitHub; }).nomad_1_4_5;
         nomad_1_4_4 = ((import ./nomad_1_4.nix) { inherit lib buildGoModule fetchFromGitHub; }).nomad_1_4_4;
         nomad_1_4_3 = ((import ./nomad_1_4.nix) { inherit lib buildGoModule fetchFromGitHub; }).nomad_1_4_3;
