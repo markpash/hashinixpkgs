@@ -1,6 +1,12 @@
 { lib, buildGoModule, fetchFromGitHub }:
 
 {
+  nomad_1_3_11 = (import ./nomad.nix) {
+    inherit lib buildGoModule fetchFromGitHub;
+    version = "1.3.11";
+    sha256 = "sha256-mdpkOyXJBVLFpJZhrUv0Rw3Aaa9fxCJK+QRuXEXIeak=";
+    vendorSha256 = "sha256-0C/GIj4hGIE/f3OvFWU0hgrmN9x8XNV+uMbxtKz4DLA=";
+  };
   nomad_1_3_10 = (import ./nomad.nix) {
     inherit lib buildGoModule fetchFromGitHub;
     version = "1.3.10";
