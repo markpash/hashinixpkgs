@@ -8,7 +8,13 @@
     flake = { };
     systems = [ "x86_64-linux" "aarch64-linux" ];
     perSystem = { pkgs, lib, ... }: {
-      packages = let buildGoModule = pkgs.buildGoModule; fetchFromGitHub = pkgs.fetchFromGitHub; in
+      packages =
+        let
+          buildGoModule = (pkgs.buildGoModule.override {
+            go = pkgs.buildPackages.go_1_21;
+          });
+          fetchFromGitHub = pkgs.fetchFromGitHub;
+        in
         ((import ./nomad_versions.nix) { inherit lib buildGoModule fetchFromGitHub; }) //
         ((import ./consul_versions.nix) { inherit lib buildGoModule fetchFromGitHub; });
     };
