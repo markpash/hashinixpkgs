@@ -8,6 +8,7 @@ lib.attrsets.mapAttrs'
     )
   )
 {
+  "1.17.1" = { sha256 = "sha256-z6pO9+fQ+0jeYM3wCG8T/1C5aSeSZITj+f8TmGxR+Gw="; vendorSha256 = "sha256-Xt7azJS65B53jYPWLytNaGQv3Poy+3j4ak1Jq68vZRI="; };
   "1.17.0" = { sha256 = "sha256-fAcgO7r0GrL2GrsX7flezhbQMcg+YBH6Lrn7BW2XMwM="; vendorSha256 = "sha256-xxREyw7xgx9Zp7nua1yq39TioWvRQXOhWqYaK6eJaOc="; };
 
   "1.16.3" = { sha256 = "sha256-XxT+66CNuDeVBoaNhlgET5bJYB/KDCjcO0RDmyI6S9o="; vendorSha256 = "sha256-WNvdHT915GSTFhZZfoi/MCHAjzBVYkhUiPNPw5GDT4s="; };
