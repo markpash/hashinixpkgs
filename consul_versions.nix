@@ -20,6 +20,7 @@ lib.attrsets.mapAttrs'
   "1.16.1" = { sha256 = "sha256-EEreAhxBQm6Wj1JFGfC9Ql3NARPXNOhqZkzIDJ2NMkg="; vendorHash = "sha256-zERHmtmGrPrUPJ2fFc+J0pWKLKQc9TTSFkN2RUOXOoM="; };
   "1.16.0" = { sha256 = "sha256-7F0kutAWyi22OxI242P8m1Aoj+l/7F91wmxDSt4ttyA="; vendorHash = "sha256-aZRW+z9oW7if+yMOrETNXFC521Wo0feq1FDv8/Q4ejY="; };
 
+  "1.15.10" = { sha256 = "sha256-xr5yuUH8e1LNN4MQxFQ2AgjlOWXDyG3wyXQVBhearFI="; vendorHash = "sha256-hJCdUpvzsRH3GO+Y9favXL8XTa3r2io+t1Na2mOqFVY="; };
   "1.15.9" = { sha256 = "sha256-ShVU0YUSGzI9zOtOqwT6MKvG64dz7V4ce9mxj4btrm8="; vendorHash = "sha256-afQ+4G/xNAVBRD7ycQoPWmNYHtNXiEE/hJJ8GCu5dUE="; };
   "1.15.8" = { sha256 = "sha256-yqw20NOxlMpdKmdPZAwWvFnod+XUmev3NRIKDNKx2wQ="; vendorHash = "sha256-09ufo62/n1Rr3PeBEvyueN3yomA5ekM9vssKI12pN6w="; };
   "1.15.7" = { sha256 = "sha256-Nz/IIgK55k6FKPBqzjFn6XcChyhXKBk8leE33iwbkq8="; vendorHash = "sha256-vgWF+Mn9OfB6qNdRn9qeoPxhn6vLFEfNtzrgyt2QQ4Q="; };
