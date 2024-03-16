@@ -1,4 +1,4 @@
-{ lib, buildGoModule, fetchFromGitHub, version , sha256 , vendorSha256 }:
+{ lib, buildGoModule, fetchFromGitHub, version , sha256 , vendorHash }:
 
 buildGoModule rec {
   pname = "consul";
@@ -10,14 +10,13 @@ buildGoModule rec {
     rev = "v${version}";
     inherit sha256;
   };
-  inherit vendorSha256;
+  inherit vendorHash;
 
   subPackages = ["." "connect/certgen"];
 
   ldflags = [
     "-s"
     "-w"
-    "-buildid="
     "-X github.com/hashicorp/consul/version.GitDescribe=v${version}"
     "-X github.com/hashicorp/consul/version.Version=${version}"
     "-X github.com/hashicorp/consul/version.VersionPrerelease="

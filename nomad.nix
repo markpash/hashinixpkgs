@@ -1,4 +1,4 @@
-{ lib, buildGoModule, fetchFromGitHub, version , sha256 , vendorSha256 }:
+{ lib, buildGoModule, fetchFromGitHub, version , sha256 , vendorHash }:
 
 buildGoModule rec {
   pname = "nomad";
@@ -10,14 +10,13 @@ buildGoModule rec {
     rev = "v${version}";
     inherit sha256;
   };
-  inherit vendorSha256;
+  inherit vendorHash;
 
   subPackages = [ "." ];
 
   ldflags = [
     "-s"
     "-w"
-    "-buildid="
     "-X github.com/hashicorp/nomad/version.GitCommit=${version}"
   ];
 
