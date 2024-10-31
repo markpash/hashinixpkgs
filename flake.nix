@@ -11,7 +11,7 @@
       packages =
         let
           buildGoModule = (pkgs.buildGoModule.override {
-            go = pkgs.buildPackages.go_1_22;
+            go = pkgs.buildPackages.go_1_23;
           });
           fetchFromGitHub = pkgs.fetchFromGitHub;
         in
