@@ -14,7 +14,7 @@ jobs:
       - name: install nix
         uses: DeterminateSystems/nix-installer-action@v16
       - name: set up nix cache
-        uses: DeterminateSystems/magic-nix-cache-action@v8
+        uses: DeterminateSystems/magic-nix-cache-action@v9
       - name: update inputs
         uses: DeterminateSystems/update-flake-lock@v24
         with:
