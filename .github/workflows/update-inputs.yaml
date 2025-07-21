@@ -16,7 +16,7 @@ jobs:
       - name: set up nix cache
         uses: DeterminateSystems/magic-nix-cache-action@v13
       - name: update inputs
-        uses: DeterminateSystems/update-flake-lock@v26
+        uses: DeterminateSystems/update-flake-lock@v27
         with:
           inputs: nixpkgs flake-parts
           pr-title: "Update flake inputs"
